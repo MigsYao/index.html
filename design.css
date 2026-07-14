@@ -1,0 +1,115 @@
+        
+     html, body { height: 100%; }
+        body { position: relative; margin:0; }
+
+        .slideshow { position: fixed; inset: 0; overflow: hidden; z-index: -2; }
+        .slideshow span {
+            position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0;
+            animation: slidefade 20s linear infinite;
+        }
+       
+        .slideshow span:nth-child(1) { background-image: url('bg4.jfif'); animation-delay: 0s; }
+        .slideshow span:nth-child(2) { background-image: url('bg5.jpg'); animation-delay: 5s; }
+        .slideshow span:nth-child(3) { background-image: url('bg8.jpg'); animation-delay: 10s; }
+        .slideshow span:nth-child(4) { background-image: url('bg9.jpg'); animation-delay: 15s; }
+
+        .slideshow::after {
+            content: '';
+            position: absolute; inset: 0; background: rgba(255,255,255,0.45); z-index: 1; pointer-events: none;
+        }
+
+        @keyframes slidefade {
+            0% { opacity: 0; }
+            5% { opacity: 1; }
+            25% { opacity: 1; }
+            30% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+
+        header, nav, section, footer { position: relative; z-index: 2; }     
+        
+        
+        
+        
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #271d55;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font: 50px "fantasy",Impact;
+        }
+        nav {
+            background-color: #303e64;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+		.instagram-feed {
+			padding-top: 30px;
+			padding-bottom: 30px;
+			background-color: #271d55;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 40px;
+			justify-content: center;
+		}
+		
+		.announcement-card {
+			background-color: #e8edf1;
+			padding: 10px;
+			border-radius: 5px;
+			justify-content: center;
+		}
+
+		.about {
+			padding: 20px;
+			background-color: #271d55;
+		}
+
+         header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:20px;
+        }
+        header img{
+            height:200px; 
+            width:auto;
+            display:block;
+        }
+        header h1, header p{ margin:0; }
+        header .center{
+            text-align:center;
+            flex:1;
+        }
