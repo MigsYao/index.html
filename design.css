@@ -29,9 +29,6 @@
         header, nav, section, footer { position: relative; z-index: 2; }     
         
         
-        
-        
-        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -41,59 +38,63 @@
         header {
             background-color: #271d55;
             color: white;
-            padding: 20px;
+            padding: 2%;
             text-align: center;
-            font: 50px "fantasy",Impact;
+            font: 312.5% "fantasy",Impact;
         }
         nav {
             background-color: #303e64;
-            padding: 10px;
+            padding: 1%;
             text-align: center;
         }
         nav a {
             color: white;
-            padding: 10px 15px;
+            padding: 1% 1.5%;
             text-decoration: none;
-            margin: 0 5px;
+            margin: 0 0.5%;
         }
         nav a:hover {
             background-color: #777;
         }
         section {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 100%;
+            margin: 2% auto;
+            padding: 2%;
             background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 0.5%;
+            box-shadow: 0 0.2% 0.5% rgba(0,0,0,0.1);
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            padding: 1.5%;
+            margin-top: 3%;
         }
 
 		.instagram-feed {
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 3%;
+			padding-bottom: 3%;
 			background-color: #271d55;
 			display: flex;
-			flex-wrap: wrap;
-			gap: 40px;
-			justify-content: center;
-		}
-		
-		.announcement-card {
-			background-color: #e8edf1;
-			padding: 10px;
-			border-radius: 5px;
+	    	flex-direction: column;
+		    gap: 4%;
+	        justify-content: center;
+		    align-items: center;
+			border-radius: 0.5%;
 			justify-content: center;
 		}
 
+        .announcement-card {
+            background-color: #ffffff;
+            color: rgb(16, 1, 29);
+            padding: 6%;
+            margin: 1% 0;
+            border-radius: 0.5%;
+        }
+
 		.about {
-			padding: 20px;
+			padding: 2%;
 			background-color: #271d55;
 		}
 
@@ -101,10 +102,10 @@
             display:flex;
             align-items:center;
             justify-content:space-between;
-            padding:20px;
+            padding:2%;
         }
         header img{
-            height:200px; 
+            height:20%; 
             width:auto;
             display:block;
         }
